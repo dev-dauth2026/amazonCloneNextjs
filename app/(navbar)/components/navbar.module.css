@@ -1,0 +1,33 @@
+.navbar,
+.noSearchSmallerDevice {
+  display: flex;
+}
+.smallerDevice {
+  display: none;
+}
+.secondSearchForm {
+  display: none;
+}
+
+@media (max-width: 1300px) {
+  .navbar {
+    display: none;
+  }
+  .smallerDevice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+  }
+}
+
+@media (max-width: 780px) {
+  .noSearchSmallerDevice {
+    display: none;
+  }
+
+  .secondSearchForm {
+    display: flex;
+    margin: 10px;
+  }
+}
