@@ -1,0 +1,38 @@
+.hamIcon {
+  display: none;
+}
+.hamburgerMenuLists {
+  position: absolute;
+  top: -4px;
+  color: black;
+  background-color: lightgray;
+  z-index: 1000;
+  transition: 0.5s all ease;
+  transform: translateX(-200%);
+}
+.hamburgerMenuListsOff {
+  display: none;
+  transition: 0.5s all ease;
+}
+.hamburgerMenuListsOn {
+  left: -5;
+  top: -4px;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  transform: translateX(0%);
+}
+.menulists > li:hover {
+  background-color: #6bc5e3;
+}
+.Close {
+  position: absolute;
+  right: -25px;
+  top: 0;
+  font-size: x-large;
+}
+@media (max-width: 1040px) {
+  .hamIcon {
+    display: block;
+  }
+}

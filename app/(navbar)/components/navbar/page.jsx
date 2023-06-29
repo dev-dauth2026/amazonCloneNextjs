@@ -1,15 +1,23 @@
 "use client";
 import Link from "next/link";
-import { FaFlag, FaMapMarkerAlt, FaShoppingCart, FaUser } from "react-icons/fa";
+import {
+  FaBars,
+  FaFlag,
+  FaMapMarkerAlt,
+  FaShoppingCart,
+  FaUser,
+} from "react-icons/fa";
 import SearchForm from "../searchForm/page";
 import styles from "./../navbar.module.css";
+import HamBurgerMenu from "../hamburgerMenu/page";
 
 export default function Navbar() {
   return (
     <>
       <header className="bg-gray-900 text-white">
         <nav className="flex items-center justify-between h-16 px-5 py-5 ">
-          <div className="flex m-0 mr-5">
+          <div className="flex m-0 mr-5 items-center">
+            <HamBurgerMenu />
             <div className="relative focus:outline pb-5">
               <Link href="/store" className="flex items-end">
                 <p className="text-white font-bold text-3xl ">amazon</p>
