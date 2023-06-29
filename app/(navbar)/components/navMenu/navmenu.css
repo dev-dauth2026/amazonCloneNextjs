@@ -1,0 +1,41 @@
+.menuLists {
+  display: none;
+}
+li {
+  padding: 5px;
+}
+li:hover {
+  outline: 1px solid white;
+}
+
+@media (max-width: 1375px) {
+  .navLists {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navLists ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .steamMovie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+  }
+}
+
+@media (min-width: 1055px) {
+  .menuLists {
+    display: flex;
+  }
+}
+
+@media (max-width: 1050px) {
+  .navLists ul {
+    display: none;
+  }
+}
