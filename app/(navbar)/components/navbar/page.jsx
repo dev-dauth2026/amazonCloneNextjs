@@ -14,9 +14,9 @@ import HamBurgerMenu from "../hamburgerMenu/page";
 export default function Navbar() {
   return (
     <>
-      <header className="bg-gray-900 text-white">
-        <nav className="flex items-center justify-between h-16 px-5 py-5 ">
-          <div className="flex m-0 mr-5 items-center">
+      <header className="relative  bg-gray-900 text-white">
+        <nav className=" z-30 flex items-center justify-between h-16 px-5 py-5 ">
+          <div className="  flex m-0 mr-5 items-center ">
             <HamBurgerMenu />
             <div className="relative focus:outline pb-5">
               <Link href="/store" className="flex items-end">

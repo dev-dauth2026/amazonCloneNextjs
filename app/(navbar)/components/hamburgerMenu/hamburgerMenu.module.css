@@ -3,7 +3,6 @@
 }
 .hamburgerMenuLists {
   position: absolute;
-  top: -4px;
   color: black;
   background-color: lightgray;
   z-index: 1000;
@@ -15,8 +14,10 @@
   transition: 0.5s all ease;
 }
 .hamburgerMenuListsOn {
-  left: -5;
-  top: -4px;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  overflow-y: scroll;
   display: flex;
   flex-direction: column;
   width: 350px;
@@ -27,9 +28,11 @@
 }
 .Close {
   position: absolute;
-  right: -25px;
-  top: 0;
-  font-size: x-large;
+  right: 5px;
+  top: 5px;
+  color: white;
+  z-index: 100;
+  font-size: 35px;
 }
 @media (max-width: 1040px) {
   .hamIcon {

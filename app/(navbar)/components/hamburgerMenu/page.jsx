@@ -20,13 +20,13 @@ const HamBurgerMenu = () => {
   }, [toggle]);
 
   return (
-    <div className={`relative ${hamburgerMenu.hamIcon} `}>
-      <button className="z-50" onClick={handleToggle}>
+    <div className={` ${hamburgerMenu.hamIcon} `}>
+      <button className="z-50 h-full" onClick={handleToggle}>
         <FaBars className="text-2xl mr-5  hover:text-gray-300" />
       </button>
 
       <div className={`${hamburgerMenu.hamburgerMenuLists} ${lists}`}>
-        <div className="w-full bg-gray-700 text-white p-5">
+        <div className=" bg-gray-700 text-white p-5">
           <span className="text-xl text-yellow-500">amazon</span>
           <span className="text-sm">.com.au</span>
         </div>
