@@ -32,24 +32,46 @@ const SearchForm = () => {
       fontSize: "12px",
       borderTopRightRadius: "0",
       borderBottomRightRadius: "0",
+      index: "1000",
     }),
     menu: (values) => ({
       ...values,
       width: "250px",
-      backgroundColor: "light-gray",
+      backgroundColor: "white",
       fontSize: "12px",
+      height: "auto",
+      maxHeight: "100vh",
     }),
   };
   return (
     <form className="flex items-center w-full h-15 " onSubmit={handleSubmit}>
       <div className="relative inline-flex w-full focus:outline-yellow-800">
         <Select
-          className="text-gray-900 rounded-r-0"
+          className="text-gray-900 rounded-r-0 bg-white"
           options={[
-            { value: "all", label: "All" },
-            { value: "electronic", label: "Electronic" },
-            { value: "clothes", label: "Clothes" },
-            { value: "computer accessories", label: "Computer Accessories" },
+            { value: "all", label: "All Departments" },
+            { value: "alexa skill", label: "Alexa Skills" },
+            { value: "amazon devices", label: "Amazon Devices" },
+            { value: "amazon global store", label: "Amazon Global Store" },
+            { value: "amazon warehouse", label: "Amazon Warehouse" },
+            { value: "apps & games", label: "Apps & Games" },
+            { value: "Audible Audiobooks", label: "Audible Audiobooks" },
+            { value: "Automotives", label: "Automotives" },
+            { value: "Baby", label: "Baby" },
+            { value: "Beauty", label: "Beauty" },
+            { value: "CDs & Vinyl", label: "CDs & Vinyl" },
+            {
+              value: "Clothes, Shoes & Accessories",
+              label: "Clothes, Shoes & Accessories",
+            },
+            { value: "Women", label: "Women" },
+            { value: "Men", label: "Men" },
+            { value: "Boys", label: "Boys" },
+            { value: "Girls", label: "Girls" },
+            {
+              value: "Computers & Accessories",
+              label: "Computers & Accessories",
+            },
           ]}
           onChange={handleOptionChange}
           placeholder="All"

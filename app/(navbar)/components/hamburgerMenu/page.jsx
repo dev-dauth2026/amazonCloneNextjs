@@ -12,9 +12,7 @@ const HamBurgerMenu = () => {
     setToggle(!toggle);
   };
 
-  const lists = toggle
-    ? `${hamburgerMenu.hamburgerMenuListsOn} `
-    : `${hamburgerMenu.hamBurgerMenuListsOff}`;
+  const lists = toggle ? `${hamburgerMenu.hamburgerMenuListsOn} ` : null;
   useEffect(() => {
     console.log(toggle);
   }, [toggle]);
@@ -31,7 +29,7 @@ const HamBurgerMenu = () => {
           <span className="text-sm">.com.au</span>
         </div>
         <hr />
-        <ul className={`sideMenuLists w-full p-5  ${hamburgerMenu.menulists}`}>
+        <ul className={`sideMenuLists w-full   ${hamburgerMenu.menulists}`}>
           <li>
             <Link href="/" className="flex flex-row  gap-x-3">
               All
