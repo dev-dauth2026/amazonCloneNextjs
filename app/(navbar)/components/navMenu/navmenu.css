@@ -2,7 +2,7 @@
   padding: 5px;
 }
 .menuLists li:hover {
-  outline: 1px solid white;
+  color: rgb(94, 164, 187);
 }
 
 @media (max-width: 1375px) {

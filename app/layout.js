@@ -6,6 +6,7 @@ import Footer from "./(navbar)/components/footer/page";
 import SearchForm from "./(navbar)/components/searchForm/page";
 import styles from "./(navbar)/components/navbar.module.css";
 import NavMenu from "./(navbar)/components/navMenu/page";
+import Slider from "./(navbar)/components/slider/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
         <div className={styles.secondSearchForm}>
           <SearchForm />
         </div>
+        <Slider />
         {children}
         <Footer />
       </body>
