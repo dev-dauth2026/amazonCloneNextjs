@@ -12,6 +12,8 @@ const ProductList = [
     offer: 0,
     linkTitle: "View Product",
     link: "/product1",
+
+    totalPurchase: 1234,
   },
   {
     id: "2",
@@ -27,6 +29,8 @@ const ProductList = [
     offer: 0,
     linkTitle: "View Product",
     link: "/product2",
+
+    totalPurchase: 1234,
   },
   {
     id: "3",
@@ -41,6 +45,8 @@ const ProductList = [
     offer: 0,
     linkTitle: "View Product",
     link: "/product3",
+
+    totalPurchase: 1234,
   },
   {
     id: "4",
@@ -55,6 +61,8 @@ const ProductList = [
     offer: 0,
     linkTitle: "View Product",
     link: "/product4",
+
+    totalPurchase: 1234,
   },
   {
     id: "5",
@@ -70,6 +78,8 @@ const ProductList = [
     offer: 0,
     linkTitle: "View Product",
     link: "/product5",
+
+    totalPurchase: 1234,
   },
   {
     id: "6",
@@ -85,6 +95,8 @@ const ProductList = [
     offer: 0,
     linkTitle: "View Product",
     link: "/product6",
+
+    totalPurchase: 1234,
   },
   {
     id: "7",
@@ -99,6 +111,8 @@ const ProductList = [
     offer: 0,
     linkTitle: "View Product",
     link: "/product7",
+
+    totalPurchase: 1234,
   },
   {
     id: "8",
@@ -113,6 +127,8 @@ const ProductList = [
     offer: 0,
     linkTitle: "View Product",
     link: "/product8",
+
+    totalPurchase: 1234,
   },
   {
     id: "9",
@@ -128,6 +144,8 @@ const ProductList = [
     offer: 0,
     linkTitle: "View Product",
     link: "/product9",
+
+    totalPurchase: 1234,
   },
   {
     id: "10",
@@ -143,6 +161,7 @@ const ProductList = [
     offer: 0,
     linkTitle: "View Product",
     link: "/product10",
+    totalPurchase: 1234,
   },
   {
     id: "11",
@@ -158,6 +177,7 @@ const ProductList = [
     offer: 0,
     linkTitle: "View Product",
     link: "/product11",
+    totalPurchase: 1234,
   },
   {
     id: "12",
@@ -172,6 +192,7 @@ const ProductList = [
     offer: 0,
     linkTitle: "View Product",
     link: "/product12",
+    totalPurchase: 1234,
   },
   {
     id: "13",
@@ -186,6 +207,7 @@ const ProductList = [
     offer: 0,
     linkTitle: "View Product",
     link: "/product13",
+    totalPurchase: 1234,
   },
   {
     id: "14",
@@ -201,6 +223,7 @@ const ProductList = [
     offer: 0,
     linkTitle: "View Product",
     link: "/product14",
+    totalPurchase: 1234,
   },
   {
     id: "15",
@@ -216,6 +239,7 @@ const ProductList = [
     offer: 0,
     linkTitle: "View Product",
     link: "/product15",
+    totalPurchase: 1234,
   },
   {
     id: "16",
@@ -231,6 +255,7 @@ const ProductList = [
     offer: 0,
     linkTitle: "View Product",
     link: "/product16",
+    totalPurchase: 1234,
   },
   {
     id: "17",
@@ -246,6 +271,7 @@ const ProductList = [
     offer: 0,
     linkTitle: "View Product",
     link: "/product17",
+    totalPurchase: 1234,
   },
   {
     id: "18",
@@ -261,6 +287,7 @@ const ProductList = [
     offer: 0,
     linkTitle: "View Product",
     link: "/product18",
+    totalPurchase: 1234,
   },
   {
     id: "19",
@@ -276,6 +303,7 @@ const ProductList = [
     offer: 0,
     linkTitle: "View Product",
     link: "/product19",
+    totalPurchase: 1234,
   },
   {
     id: "20",
@@ -291,6 +319,7 @@ const ProductList = [
     offer: 0,
     linkTitle: "View Product",
     link: "/product20",
+    totalPurchase: 1234,
   },
 ];
 export default ProductList;
