@@ -50,7 +50,7 @@ const Slider = () => {
           />
         );
       })}
-      <button className="absolute left-5 top-40 text-gray-900 z-50">
+      <button className="absolute left-5 top-40 text-gray-900 z-40">
         <FaChevronLeft
           className="text-3xl"
           onClick={() => setActiveSlideIndex(activeSlideIndex - 1)}
