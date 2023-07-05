@@ -104,7 +104,6 @@ const Footer = () => {
 
           <p>And don't forget:</p>
           <p className="text-center">
-            {" "}
             Amazon Advertising | Amazon Web Services | Goodreads Shopbop
           </p>
         </div>

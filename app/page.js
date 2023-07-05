@@ -13,7 +13,7 @@ const Home = () => {
   };
 
   return (
-    <main className="cardSection w-screen h-auto   absolute top-[400px] z-50">
+    <main className="cardSection w-screen h-auto   absolute md:top-[400px] top-[350px] z-50">
       <div className="flex flex-wrap flex-col-3 justify-evenly">
         <HomeCategoryCard />
       </div>
