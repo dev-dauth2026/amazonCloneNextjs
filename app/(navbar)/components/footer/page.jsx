@@ -4,8 +4,9 @@ import styles from "./footer.module.css";
 const Footer = () => {
   const { links } = styles;
   return (
-    <footer className="flex flex-col ">
-      <div className="mainFooter bg-gray-700 flex flex-row justify-around  text-white p-6">
+    <footer className="flex flex-col bg-gray-700 justify-center items-center text-white ">
+      {/* footer  1  */}
+      <div className="mainFooter  flex flex-row justify-around p-6 gap-16">
         <div className="div1 flex flex-col justify-start ">
           <p className="font-bold mb-2 ">Get to Know Us</p>
           <ul className={links}>
@@ -79,8 +80,38 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="flex copyRight bg-gray-700 text-white p-6 justify-center items-center">
-        <p>copyright reserved 2023 | Shoe Store Australia</p>
+      {/* footer 1 ends  */}
+      <hr className="mt-5 mb-5 h-[2px] bg-gray-900 opacity-20 w-screen" />
+      <div className="footer2 flex flex-col justify-center items-center w-screen">
+        {/* logo starts */}
+        <div className="relative focus:outline pb-5  flex justify-center">
+          <Link href="/store" className="flex items-end">
+            <p className="text-white font-bold text-3xl ">amazon</p>
+          </Link>
+          <div className="absolute top-8   w-20 p-0">
+            <img src="/amazonLogo.png" alt="" className="w-3/4 " />
+          </div>
+        </div>
+        {/* logo ends  */}
+        <div className="branchCountries flex flex-col justify-center  w-3/5 items-center text-[13px] pb-5">
+          <div className="flex justify-center items-center w-full ">
+            <p className=" text-center">
+              Brazil | Canada | China | France | Germany | India | Italy | Japan
+              | Mexico Netherlands | Poland | Singapore | Spain |Turkey | United
+              Arab Emirates | United Kingdom United States
+            </p>
+          </div>
+
+          <p>And don't forget:</p>
+          <p className="text-center">
+            {" "}
+            Amazon Advertising | Amazon Web Services | Goodreads Shopbop
+          </p>
+        </div>
+      </div>
+      <div className="flex flex-col justify-center items-center w-screen copyRight bg-gray-900 text-white p-6 text-[13px]">
+        <p>Conditions of Use & Sale Privacy Notice Interest-Based Ads Notice</p>
+        <p>© 1996-2023, Amazon.com, Inc. or its affiliates</p>
       </div>
     </footer>
   );
