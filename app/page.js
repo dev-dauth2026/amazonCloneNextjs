@@ -14,7 +14,7 @@ const Home = () => {
 
   return (
     <main className="cardSection w-screen h-auto   absolute md:top-[400px] top-[350px] z-50">
-      <div className="flex flex-wrap flex-col-3 justify-evenly">
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-2 p-4">
         <HomeCategoryCard />
       </div>
 

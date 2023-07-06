@@ -9,7 +9,7 @@ const HomeCategoryCard = () => {
         const { id, title, image, link, linkTitle } = product;
         return (
           <div
-            className="card md:w-80 w-full h-auto bg-white p-5 flex flex-col mb-5 justify-between"
+            className="card max-w-[700px] h-auto  bg-white p-5 flex flex-col justify-between border-2 border-red-500"
             key={id}
           >
             <h3 className="text-xl font-bold">{title}</h3>
