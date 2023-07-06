@@ -5,6 +5,8 @@ const HomeCategoryList = [
     image: "./products/Powerjstower.jpeg",
     link: "/",
     linkTitle: "See more",
+    deal: "50% off",
+    dealType: "Early Prime deal",
   },
   {
     id: 2,
@@ -15,10 +17,10 @@ const HomeCategoryList = [
   },
   {
     id: 3,
-    title: "Trending Deal",
-    image: "./products/cameraStand.jpeg",
+    title: "Free delivery on your first eligible order",
+    image: "./homeProductCategory/freeDelivery.jpeg",
     link: "/",
-    linkTitle: "See more",
+    linkTitle: "Learn more",
   },
   {
     id: 4,
@@ -29,8 +31,8 @@ const HomeCategoryList = [
   },
   {
     id: 5,
-    title: "Trending Deal",
-    image: "./products/cameraStand.jpeg",
+    title: "New Podcast",
+    image: "./homeProductCategory/bloombergPodcast.jpeg",
     link: "/",
     linkTitle: "See more",
   },
