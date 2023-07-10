@@ -5,15 +5,6 @@ import ProductList from "../productList/page";
 import { current } from "@reduxjs/toolkit";
 
 const HomeDealCategoryCard = () => {
-  const trendingProducts = ProductList.filter((product) => product.trending);
-  console.log(
-    `Trending Product: ${trendingProducts.map((item, index) => {
-      return item.id;
-      item.name;
-      item.totalPurchase;
-    })}`
-  );
-
   const highestPurchaseTrendingProduct = ProductList.reduce(
     (highPurchaseProduct, currentProduct) => {
       if (
@@ -72,7 +63,7 @@ const HomeDealCategoryCard = () => {
             {highestPurchaseTrendingProduct.id === id ||
             highestDiscountedProduct.id === id ? (
               <div
-                className="card  bg-white p-5 flex flex-col justify-between gap-2"
+                className="card  bg-white p-4 flex flex-col justify-between gap-2 h-[400px]"
                 key={id}
               >
                 {highestPurchaseTrendingProduct.id === id ? (
@@ -82,7 +73,7 @@ const HomeDealCategoryCard = () => {
                     <img
                       src={image}
                       alt="Trending Products"
-                      className="md:w-full max-w-[180px] object-contain self-center "
+                      className="  h-[200px] object-contain "
                     />
                   </>
                 ) : // product with highest price and trending ends
@@ -93,7 +84,7 @@ const HomeDealCategoryCard = () => {
                     <img
                       src={image}
                       alt="top deals product"
-                      className="md:w-full max-w-[180px] object-contain self-center "
+                      className=" h-[200px] object-contain  "
                     />
                   </>
                 ) : // product with highest discount price ends
@@ -103,9 +94,11 @@ const HomeDealCategoryCard = () => {
                   <span className="bg-red-600 p-2 rounded text-white w-fit text-[11px] font-bold mr-2">
                     {discountedPrice} % off
                   </span>
-                  <small className="text-[11px] text-red-600 font-bold">
-                    Top deal
-                  </small>
+                  {highestDiscountedProduct.id === id && (
+                    <small className="text-[11px] text-red-600 font-bold">
+                      Top deal
+                    </small>
+                  )}
                 </div>
                 <p>
                   ${discountedAmount}
