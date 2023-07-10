@@ -12,8 +12,8 @@ const ProductList = [
     offer: 0,
     linkTitle: "View Product",
     link: "/product1",
-
     totalPurchase: 1234,
+    trending: false,
   },
   {
     id: "2",
@@ -29,8 +29,8 @@ const ProductList = [
     offer: 0,
     linkTitle: "View Product",
     link: "/product2",
-
     totalPurchase: 1234,
+    trending: false,
   },
   {
     id: "3",
@@ -47,6 +47,7 @@ const ProductList = [
     link: "/product3",
 
     totalPurchase: 1234,
+    trending: false,
   },
   {
     id: "4",
@@ -61,8 +62,8 @@ const ProductList = [
     offer: 0,
     linkTitle: "View Product",
     link: "/product4",
-
     totalPurchase: 1234,
+    trending: false,
   },
   {
     id: "5",
@@ -78,8 +79,8 @@ const ProductList = [
     offer: 0,
     linkTitle: "View Product",
     link: "/product5",
-
     totalPurchase: 1234,
+    trending: false,
   },
   {
     id: "6",
@@ -95,8 +96,8 @@ const ProductList = [
     offer: 0,
     linkTitle: "View Product",
     link: "/product6",
-
     totalPurchase: 1234,
+    trending: false,
   },
   {
     id: "7",
@@ -111,8 +112,8 @@ const ProductList = [
     offer: 0,
     linkTitle: "View Product",
     link: "/product7",
-
     totalPurchase: 1234,
+    trending: false,
   },
   {
     id: "8",
@@ -127,8 +128,8 @@ const ProductList = [
     offer: 0,
     linkTitle: "View Product",
     link: "/product8",
-
     totalPurchase: 1234,
+    trending: false,
   },
   {
     id: "9",
@@ -141,12 +142,11 @@ const ProductList = [
     rating: 4.1,
     reviews: 6,
     discountedPrice: 5,
-    trendingDeal: true,
     offer: 0,
     linkTitle: "View Product",
     link: "/product9",
-
     totalPurchase: 1234,
+    trending: false,
   },
   {
     id: "10",
@@ -163,6 +163,7 @@ const ProductList = [
     linkTitle: "View Product",
     link: "/product10",
     totalPurchase: 1234,
+    trending: false,
   },
   {
     id: "11",
@@ -179,6 +180,7 @@ const ProductList = [
     linkTitle: "View Product",
     link: "/product11",
     totalPurchase: 1234,
+    trending: false,
   },
   {
     id: "12",
@@ -193,7 +195,8 @@ const ProductList = [
     offer: 0,
     linkTitle: "View Product",
     link: "/product12",
-    totalPurchase: 1234,
+    totalPurchase: 12340,
+    trending: true,
   },
   {
     id: "13",
@@ -209,6 +212,7 @@ const ProductList = [
     linkTitle: "View Product",
     link: "/product13",
     totalPurchase: 1234,
+    trending: false,
   },
   {
     id: "14",
@@ -225,6 +229,7 @@ const ProductList = [
     linkTitle: "View Product",
     link: "/product14",
     totalPurchase: 1234,
+    trending: false,
   },
   {
     id: "15",
@@ -241,6 +246,7 @@ const ProductList = [
     linkTitle: "View Product",
     link: "/product15",
     totalPurchase: 1234,
+    trending: true,
   },
   {
     id: "16",
@@ -257,6 +263,7 @@ const ProductList = [
     linkTitle: "View Product",
     link: "/product16",
     totalPurchase: 1234,
+    trending: true,
   },
   {
     id: "17",
@@ -274,6 +281,7 @@ const ProductList = [
     linkTitle: "View Product",
     link: "/product17",
     totalPurchase: 1234,
+    trending: false,
   },
   {
     id: "18",
@@ -291,6 +299,7 @@ const ProductList = [
     linkTitle: "View Product",
     link: "/product18",
     totalPurchase: 1234,
+    trending: false,
   },
   {
     id: "19",
@@ -308,6 +317,7 @@ const ProductList = [
     linkTitle: "View Product",
     link: "/product19",
     totalPurchase: 1234,
+    trending: false,
   },
   {
     id: "20",
@@ -325,6 +335,7 @@ const ProductList = [
     linkTitle: "View Product",
     link: "/product20",
     totalPurchase: 1234,
+    trending: false,
   },
 ];
 export default ProductList;
