@@ -5,6 +5,7 @@ const HomeServiceCategoryList = [
     image: "./homeProductCategory/freeDelivery.jpeg",
     link: "/",
     linkTitle: "Learn more",
+    order: "order-3",
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ const HomeServiceCategoryList = [
     image: "./homeProductCategory/joinPrime.jpeg",
     link: "/",
     linkTitle: "Prime renews at $9.99/month. Learn More",
+    order: "order-5",
   },
 ];
 export default HomeServiceCategoryList;
