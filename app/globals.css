@@ -111,3 +111,25 @@
 .li {
   text-decoration: none;
 }
+.cardSection .homeCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns with equal width */
+  grid-gap: 10px; /* Spacing between grid items */
+  padding: 10px;
+}
+
+@media (max-width: 1205px) {
+  .cardSection .homeCards {
+    grid-template-columns: repeat(3, 1fr); /* Four columns with equal width */
+  }
+}
+@media (max-width: 905px) {
+  .cardSection .homeCards {
+    grid-template-columns: repeat(2, 1fr); /* Four columns with equal width */
+  }
+}
+@media (max-width: 610px) {
+  .cardSection .homeCards {
+    grid-template-columns: repeat(1, 1fr); /* Four columns with equal width */
+  }
+}
