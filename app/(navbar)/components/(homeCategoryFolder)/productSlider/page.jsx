@@ -4,12 +4,12 @@ import Link from "next/link";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ProductList from "../productList/page";
+import ProductList from "../../productList/page";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import styles from './productSlider.css';
 
 
-const ProductSlider = () => {
+const ProductSlider = ({SelectedProductList,title}) => {
 // const [activeSlideIndex,setActiveSlideIndex]  =useState(2)
 function NextArrow(props) {
   const { className, style, onClick } = props;
@@ -37,12 +37,14 @@ function PrevArrow(props) {
 }
 
 const settings = {
-  dots: true,
+  dots: false,
   infinite: false,
   speed: 500,
   slidesToShow: 6,
   slidesToScroll: 6,
   initialSlide: 0,
+  slidesToScrollBar:true,
+  draggable:true,
   nextArrow:<NextArrow/>,
   prevArrow:<PrevArrow/>,
   // nextArrow: <FaChevronLeft className={styles['slick-prev']} />,
@@ -77,9 +79,9 @@ const settings = {
 const {lastSlide,activeSlide,nextSlide,productSlider}= styles;
   return (
 
-     <div className="bg-white p-5 max-h-[400px] flex flex-col overflow-hidden relative">
+     <div className="bg-white p-5 mb-5 max-h-[400px] flex flex-col overflow-hidden relative">
       <div className="flex flex-row align-baseline mb-2">
-        <h3 className="text-xl font-bold mr-5 ">Early Prime Day Deal</h3>
+        <h3 className="text-xl font-bold mr-5 ">{title}</h3>
         <Link href="/" className="self-baseline">
           See more
         </Link>
@@ -87,7 +89,7 @@ const {lastSlide,activeSlide,nextSlide,productSlider}= styles;
      <div className="w-full ">
       <Slider {...settings} className= {`flex w-full mx-auto `}>
       
-          {ProductList.map((product, index) => {
+          {SelectedProductList.map((product, index) => {
             // let position=nextSlide
 
             // if (activeSlideIndex===index ){
@@ -110,13 +112,13 @@ const {lastSlide,activeSlide,nextSlide,productSlider}= styles;
                   />
                 </div>
                 <p className="text-[14px]  mb-2">
-                  {product.earlyPrimeDeal === true ? (
+                  {product.discountedPrice? (
                     <>
                       <span className="bg-red-500 p-2 text-[10px] rounded text-white mr-2">
                         {product.discountedPrice} %
                       </span>
                       <span className="text-red-700 text-[10px]">
-                        Early Prime Deal
+                        {title}
                       </span>
                     </>
                   ) : (
@@ -126,7 +128,7 @@ const {lastSlide,activeSlide,nextSlide,productSlider}= styles;
                       </span>
 
                       <span className=" p-2 text-[10px] rounded text-red-700 mr-2">
-                        Early Prime Deal
+                       {title}
                       </span>
                     </>
                   )}

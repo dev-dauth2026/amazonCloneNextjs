@@ -10,7 +10,8 @@ import HomeSignInCard from "./(navbar)/components/(homeCategoryFolder)/homeSignI
 import Image from "next/image";
 import HomePrimeDealList from "./(navbar)/components/(homeCategoryFolder)/HomePrimeDealList/page";
 import "./globals.css";
-import ProductSlider from "./(navbar)/components/productSlider/page";
+import HomeEarlyPrimeDealSlider from "./(navbar)/components/(homeCategoryFolder)/homeEarlyPrimeDealSlider/page";
+import HomeFreePrimeDealSlider from "./(navbar)/components/(homeCategoryFolder)/homeFreePrimeDealSlider/page";
 
 const Home = () => {
   const [showIcons, setShowIcons] = useState(false);
@@ -48,7 +49,8 @@ const Home = () => {
           {/* Home Prime Deal List Starts   */}
           <HomePrimeDealList />
         </div>
-        <ProductSlider />
+       <HomeEarlyPrimeDealSlider/>
+       <HomeFreePrimeDealSlider/>
         
       </div>
 

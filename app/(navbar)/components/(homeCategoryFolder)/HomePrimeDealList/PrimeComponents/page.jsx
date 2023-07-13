@@ -18,7 +18,7 @@ const PrimeComponents = ({
                 const { id, name, image, discountedPrice } = earlyPrimeItem;
 
                 return (
-                  <>{id < "4" && <PrimeProductCard {...earlyPrimeItem} />}</>
+                  <>{index < 4 && <PrimeProductCard {...earlyPrimeItem} />}</>
                 );
               })}
             </>
@@ -26,7 +26,7 @@ const PrimeComponents = ({
             <>
               {FreePrimeDealProducts.map((freeItem, index) => {
                 const { id, name, image, discountedPrice } = freeItem;
-                return <>{id < "4" && <PrimeProductCard {...freeItem} />}</>;
+                return <>{index < 4 && <PrimeProductCard {...freeItem} />}</>;
               })}
             </> // Early Prime Deal Product starts
           ) : null}
