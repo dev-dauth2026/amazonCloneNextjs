@@ -3,6 +3,7 @@
 }
 .menuLists li:hover {
   color: rgb(94, 164, 187);
+  outline: 1px solid white;
 }
 
 @media (max-width: 1375px) {
@@ -38,4 +39,9 @@
   .navLists .menuLists li {
     white-space: nowrap;
   }
+  .menuLists li:hover {
+  
+    outline: none;
+  }
+  
 }
