@@ -1,8 +1,7 @@
 import Link from "next/link";
 import homeCategoryList from "../homeServiceCategoryCard/homeCategoryList";
-import Footer from "../footer/page";
-import ProductList from "../productList/page";
-import { current } from "@reduxjs/toolkit";
+import ProductList from "../../productList/page";
+
 
 const HomeDealCategoryCard = () => {
   const highestPurchaseTrendingProduct = ProductList.reduce(
@@ -19,9 +18,6 @@ const HomeDealCategoryCard = () => {
     }
   );
 
-  console.log(
-    `highest trending Purchase Product: ${highestPurchaseTrendingProduct.id} `
-  );
   const highestDiscountedProduct = ProductList.reduce(
     (highDiscountedProduct, currentDiscountedProduct) => {
       if (
@@ -35,7 +31,8 @@ const HomeDealCategoryCard = () => {
       }
     }
   );
-  console.log(`highest Discounted Product: ${highestDiscountedProduct.name} `);
+ 
+
   return (
     <>
       {ProductList.map((item, index) => {
@@ -63,7 +60,7 @@ const HomeDealCategoryCard = () => {
             {highestPurchaseTrendingProduct.id === id ||
             highestDiscountedProduct.id === id ? (
               <div
-                className="card  bg-white p-4 flex flex-col justify-between gap-2 h-[400px]"
+                className="card  bg-white p-4 flex flex-col justify-between gap-2 h-[400px] "
                 key={id}
               >
                 {highestPurchaseTrendingProduct.id === id ? (

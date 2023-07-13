@@ -7,7 +7,6 @@ import SearchForm from "./(navbar)/components/searchForm/page";
 import styles from "./(navbar)/components/navbar.module.css";
 import NavMenu from "./(navbar)/components/navMenu/page";
 import Slider from "./(navbar)/components/slider/page";
-import HomeCategoryCard from "./(navbar)/components/homeDealCategoryCard/page";
 
 const inter = Inter({ subsets: ["latin"] });
 

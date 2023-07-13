@@ -1,11 +1,10 @@
 import PrimeComponents from "../PrimeComponents/page";
-import ProductListForPrimeDeal from "../../productList/page";
+import ProductListForPrimeDeal from "../../../productList/page";
 const FreePrimeDeal = () => {
   const FreePrimeDealProducts = ProductListForPrimeDeal.filter(
     (product) => product.freePrimeDeal === true
   );
-  console.log("Free Prime Deal Products list");
-  console.log(FreePrimeDealProducts.length);
+
   return (
     <>
       <PrimeComponents
