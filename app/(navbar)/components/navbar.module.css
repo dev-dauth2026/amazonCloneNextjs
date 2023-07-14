@@ -1,8 +1,17 @@
-.navbar,
-.noSearchSmallerDevice {
+
+
+.locationDiv,
+.searchFormDiv,.orders,.signIn,.country {
   display: flex;
 }
-.smallerDevice {
+.locationDiv{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.locationDiv:hover{
+  outline: 1px solid white;
+}
+.useIcon {
   display: none;
 }
 .secondSearchForm {
@@ -10,10 +19,10 @@
 }
 
 @media (max-width: 1300px) {
-  .navbar {
+  .locationDiv,.orders,.signIn,.country {
     display: none;
   }
-  .smallerDevice {
+  .useIcon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +31,7 @@
 }
 
 @media (max-width: 850px) {
-  .noSearchSmallerDevice {
+  .searchFormDiv {
     display: none;
   }
 
