@@ -44,8 +44,8 @@ const SearchForm = () => {
     }),
   };
   return (
-    <form className="flex items-center w-full h-15 " onSubmit={handleSubmit}>
-      <div className="relative inline-flex w-full focus:outline-yellow-800">
+    <form className="flex items-center w-full h-15 rounded hover:ring-yellow-200 hover:ring-[1px]" onSubmit={handleSubmit}>
+      <div className="relative inline-flex w-full ">
         <Select
           className="text-gray-900 rounded-r-0 z-50"
           options={[

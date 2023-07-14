@@ -50,13 +50,13 @@ export default function Navbar() {
 
           {/* Search div starts  */}
           <div
-            className={` h-15 ml-5 mr-5 flex-grow   ${styles.searchFormDiv}`}
+            className={` h-15 ml-5 mr-5 flex-grow    ${styles.searchFormDiv}`}
           >
             <SearchForm />
           </div>
   {/* Search div ends  */}
-  
-          <div className="flex items-end space-x-4 ">
+
+          <div className="flex items-end  ">
             <div className={`${styles.country} h-14 items-center  hover:ring-[1px] hover:ring-white px-3`}>
               <FaFlag className="text-white" />
               <Link
