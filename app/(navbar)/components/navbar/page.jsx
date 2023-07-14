@@ -34,7 +34,7 @@ export default function Navbar() {
            {/* website title ends  */}
 
           {/* location div starts*/}
-          <div className={`h-14 items-center  hover:ring-[1px] hover:ring-white hover:ring-white ${styles.locationDiv}`}>
+          <div className={`h-14 items-center  hover:ring-[1px]  hover:ring-white ${styles.locationDiv}`}>
             <div className="flex justify-center items-center pb-2 mr-1">
               <FaMapMarkerAlt />
             </div>
@@ -64,7 +64,7 @@ export default function Navbar() {
                 AU
               </Link>
             </div>
-            <div className={`${styles.signIn} h-14 items-center  hover:ring-[1px] hover:ring-white`}>
+            <div className={`${styles.signIn} h-14 items-center  hover:ring-[1px] hover:ring-white px-3`}>
               <Link href="/account" className="text-sm ">
                 <small className="text-xm text-gray-200">Hello, Sign in</small>
                 <p className="text-sm">Accounts & Lists</p>
