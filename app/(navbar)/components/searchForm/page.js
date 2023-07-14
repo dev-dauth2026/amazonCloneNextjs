@@ -47,7 +47,7 @@ const SearchForm = () => {
     <form className="flex items-center w-full h-15 " onSubmit={handleSubmit}>
       <div className="relative inline-flex w-full focus:outline-yellow-800">
         <Select
-          className="text-gray-900 rounded-r-0 "
+          className="text-gray-900 rounded-r-0 z-50"
           options={[
             { value: "all", label: "All Departments" },
             { value: "alexa skill", label: "Alexa Skills" },
@@ -79,7 +79,7 @@ const SearchForm = () => {
           styles={customStyles}
         />
         <input
-          className="flex-1 text-gray-700 bg-gray-200 border border-gray-300 py-2 px-3 focus:outline-none bg-white"
+          className="flex-1 text-gray-700  border border-gray-300 py-2 px-3 focus:outline-none bg-white"
           type="text"
           placeholder="Search..."
           value={searchValue}
