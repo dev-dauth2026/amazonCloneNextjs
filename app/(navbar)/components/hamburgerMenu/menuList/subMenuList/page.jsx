@@ -1,22 +1,24 @@
 import Link from 'next/link'
 import {FaArrowLeft} from 'react-icons/fa'
-const SubMenuList=({title, subMenu, setSubMenu})=>{
+import hamburgerMenu from "../../hamburgerMenu.module.css";
+const SubMenuList=({title, subMenu, setSubMenu,subMenuID})=>{
     return(
-        <>
+        <div className={` absolute ${subMenu?'translate-x-0':'translate-x-full'} transition-all ease-linear top-0 left-[350px] flex flex-col min-w-full h-[100vh]`}>
+            <h1 className='text-[12px] uppercase p-5 hover:bg-blue-200' onClick={()=>setSubMenu(!subMenu)}><FaArrowLeft  className='inline-block text-lg'/> Main Menu</h1>
+                                                <hr />
         {
-                                    title && title.map((t,index)=>{
+                                    title.map((t,index)=>{
                                         const{id,name,subtitle}=t
                                         return(
-                                            <div className={` absolute ${subMenu?'translate-x-0':'-translate-x-100'} top-0 left-[350px] flex flex-col min-w-full border-2 border-yellow-300`}>
-                                                <h1 className='text-[12px] uppercase p-5'><FaArrowLeft onClick={()=>setSubMenu(!subMenu)} className='inline-block text-lg'/> Main Menu</h1>
-                                                <hr />
-                                                <li key={index} className='text-[15px] p-5'>
+                                            <div className={` flex flex-col min-w-full ${hamburgerMenu.titleDiv}`} key={id}>
+                                                
+                                                <li key={index} className='text-[15px] font-bold '>
                                                     {name}
                                                 </li>
                                                 {
                                                     subtitle && subtitle.map((sb,index)=>{
                                                         return(
-                                                            <li key={index} className="p-5 hover:bg-blue-200">
+                                                            <li key={index} className=" hover:bg-blue-200">
 
                                                             <Link href={sb.link}>{sb.subtitleName}</Link>
                                                             </li>  
@@ -29,7 +31,7 @@ const SubMenuList=({title, subMenu, setSubMenu})=>{
                                         )
                                     })
                                  }
-        </>
+        </div>
     )
 }
 export default SubMenuList;

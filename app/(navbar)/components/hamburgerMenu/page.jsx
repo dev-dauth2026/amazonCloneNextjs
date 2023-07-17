@@ -24,7 +24,10 @@ const HamBurgerMenu = () => {
      
       <HamburgerButton onClick={handleToggle}/>
     <MenuList onClick={handleToggle} lists={lists}/>
-      
+    {toggle &&(
+
+    <div className="bg-gray-800 bg-opacity-75  w-screen h-screen fixed top-0 left-0 z-[999]  pointer-events-none overflow-hidden transition-all duration-75"></div>
+    )}
     </div>
   );
 };
