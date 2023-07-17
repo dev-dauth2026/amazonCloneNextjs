@@ -20,7 +20,7 @@ export default function Navbar() {
 
           {/* website title starts  */}
           <div className="  flex m-0 mr-5 items-center ">
-            <HamBurgerMenu />
+           
             <div className="relative hover:ring-[1px] hover:ring-white pb-5 h-full px-3">
               <Link href="/store" className="flex items-end">
                 <p className="text-white font-bold text-3xl ">amazon</p>

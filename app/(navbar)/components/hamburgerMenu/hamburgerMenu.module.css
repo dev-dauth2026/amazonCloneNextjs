@@ -1,6 +1,4 @@
-.hamIcon {
-  display: none;
-}
+
 .hamburgerMenuLists {
   position: absolute;
   top: 0;
@@ -10,7 +8,7 @@
   display: flex;
   flex-direction: column;
   color: black;
-  background-color: lightgray;
+  background-color: white;
   z-index: 1000;
   transition: 0.5s all ease;
   transform: translateX(-200%);
@@ -24,13 +22,7 @@
 
   transform: translateX(0%);
 }
-.menulists > li {
-  width: 100%;
-  padding: 15px;
-}
-.menulists > li:hover {
-  background-color: #b1d6e2;
-}
+
 .Close {
   position: absolute;
   right: 5px;
@@ -39,8 +31,26 @@
   z-index: 100;
   font-size: 35px;
 }
-@media (max-width: 1040px) {
-  .hamIcon {
-    display: block;
-  }
+.MenuLists > li{
+  width: 100%;
+  padding: 15px;
+  transition: 0.7s all ease;
+
+}
+
+.MenuLists > a{
+  padding: 5px;
+  width: 100%;
+}
+
+.MenuLists >  li>h1{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.SubMenuOn{
+  transform: translateX(100%);
+}
+.subMenuList{
+  transform: translateX(100%);
 }

@@ -1,11 +1,13 @@
-.menuLists li {
+.menuLists >* {
   padding: 5px;
 }
-.menuLists li:hover {
+.menuLists >*:hover {
   color: rgb(94, 164, 187);
   outline: 1px solid white;
 }
-
+.hamIcon {
+  font-size: 12px;
+}
 @media (max-width: 1375px) {
   .navLists {
     display: flex;
