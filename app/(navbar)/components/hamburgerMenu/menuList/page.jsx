@@ -34,11 +34,7 @@ const MenuList=({toggle,setToggle,lists})=>{
                 return(item.menu ?
                     (
                     <div className= {hamburgerMenu.MenuLists}  key={item.id}>
-                        <li >
-                    
-                                <h1>{item.categoryTitle}</h1>
-                    
-                        </li>
+                        <li ><h1>{item.categoryTitle}</h1>  </li> 
                     {
                          item.menu.map((menuItem,index)=>{
                             return (
@@ -55,11 +51,7 @@ const MenuList=({toggle,setToggle,lists})=>{
                     </div>
                     ):(
                         <div className= {hamburgerMenu.MenuLists} key={item.id}>
-                        <li  >
-                    
-                                <h1>{item.categoryTitle}</h1>
-                        
-                        </li>
+                        <li  ><h1>{item.categoryTitle}</h1>   </li>
                     {
                         item.subCategory && item.subCategory.map((menuItem,index)=>{
                             const{id,subCategorytitle,title,link}= menuItem

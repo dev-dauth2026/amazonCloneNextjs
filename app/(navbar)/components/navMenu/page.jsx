@@ -18,10 +18,9 @@ const NavMenu = ({toggle,setToggle}) => {
       <ul className={`flex gap-x-3 text-xs items-center  ${styles.menuLists}`}>
         <li >
           <Link href="/"  >
-            <div onClick={()=>setToggle(!toggle)} className="flex flex-row items-center ">
+           
               <HamBurgerMenu toggle={toggle} setToggle={setToggle}/>
-            <span>All</span> 
-            </div>
+         
             
             
           </Link>

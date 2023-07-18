@@ -16,7 +16,11 @@ const HamBurgerMenu = ({toggle, setToggle}) => {
 
   return (
     <div className={` ${hamburgerMenu.hamIcon} `}>
-      <FaBars className="text-sm  hover:text-gray-300 mr-0" onClick={()=>setToggle(!toggle)}/>
+       <div  className="flex flex-row items-center " onClick={()=>setToggle(!toggle)}>
+      <FaBars className="text-sm  hover:text-gray-300 mr-0" />
+      <span>All</span> 
+          
+       </div>
  
     <MenuList toggle={toggle} setToggle={setToggle} lists={lists}/>
     {toggle &&(
