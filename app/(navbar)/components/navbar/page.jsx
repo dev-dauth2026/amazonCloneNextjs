@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 import SearchForm from "../searchForm/page";
 import styles from "./../navbar.module.css";
-import HamBurgerMenu from "../hamburgerMenu/page";
+
 
 export default function Navbar() {
   return (
@@ -40,7 +40,7 @@ export default function Navbar() {
             </div>
 
             <Link href="/" className="text-sm w-full">
-              <small className="text-xm text-gray-200 w-full">
+              <small className="text-xm text-gray-200 w-full whitespace-nowrap">
                 Delivery to Brisbane 4000
               </small>
               <p className="text-sm">Signin to update</p>
@@ -66,10 +66,10 @@ export default function Navbar() {
                 AU
               </Link>
             </div>
-            <div className={`${styles.signIn} h-14 items-center  hover:ring-[1px] hover:ring-white px-3`}>
+            <div className={`${styles.signIn} h-14 items-center flex-shrink-0  hover:ring-[1px] hover:ring-white px-3`}>
               <Link href="/account" className="text-sm ">
                 <small className="text-xm text-gray-200">Hello, Sign in</small>
-                <p className="text-sm">Accounts & Lists</p>
+                <p className="text-sm whitespace-nowrap">Accounts & Lists</p>
               </Link>
             </div>
             <div className={`${styles.useIcon} h-14 items-center  hover:ring-[1px] hover:ring-white px-3`}>
