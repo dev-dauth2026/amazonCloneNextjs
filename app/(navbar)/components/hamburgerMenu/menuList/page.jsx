@@ -5,7 +5,7 @@ import { FaBars, FaTimes,FaChevronRight,FaUserCircle } from "react-icons/fa";
 import MenuListArray from "../menuListArray/page";
 import SubMenuList from "./subMenuList/page";
 import { useState } from "react";
-const MenuList=({onClick,lists})=>{
+const MenuList=({toggle,setToggle,lists})=>{
     const[subMenu, setSubMenu] =useState(false)
     const[subMenuID,setSubMenuID] =useState()
     const[categoryIndexID, setCategoryIndexID] = useState()
@@ -19,7 +19,7 @@ const MenuList=({onClick,lists})=>{
     console.log('subMenu :',subMenu)
     return(
         <>
-        <div className={`${hamburgerMenu.hamburgerMenuLists} ${lists}`}>
+        <div className={`${hamburgerMenu.hamburgerMenuLists} ${lists} ${toggle && 'pointer-events-auto'}`}>
         <div className=" bg-gray-700 text-white p-5 sticky top-0 flex flex-row items-center">
           <FaUserCircle className="text-[40px] mr-5"/>
         <h1 className="text-[20px] bold inline-block "> Hello! Sign In</h1>
@@ -97,7 +97,7 @@ const MenuList=({onClick,lists})=>{
           
         </ul>
         
-        <button className={hamburgerMenu.Close} onClick={onClick}>
+        <button className={hamburgerMenu.Close} onClick={()=>setToggle(!toggle)}>
           <FaTimes />
         </button>
       </div>

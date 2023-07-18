@@ -2,18 +2,13 @@
 import Link from "next/link";
 import { FaBars } from "react-icons/fa";
 import styles from "./navmenu.module.css";
-import HamburgerButton from "../hamburgerMenu/hamburgerButton/page";
 import hamburgerMenu from "./../hamburgerMenu/hamburgerMenu.module.css"; 
 import MenuList from "../hamburgerMenu/menuList/page";
 import HamBurgerMenu from "../hamburgerMenu/page";
-import { useEffect, useState } from "react";
-const NavMenu = () => {
-    const [toggle, setToggle] = useState(false);
-  
-    const handleToggle = () => {
-      setToggle(!toggle);
-    };
-  
+import { useEffect } from "react";
+
+const NavMenu = ({toggle,setToggle}) => {
+
     const lists = toggle ? `${hamburgerMenu.hamburgerMenuListsOn} ` : null;
     useEffect(() => {
       console.log(toggle);
@@ -21,9 +16,10 @@ const NavMenu = () => {
   return (
     <nav className={`flex justify-between px-4 py-2 bg-gray-700 text-white ${styles.navLists}`}>
       <ul className={`flex gap-x-3 text-xs items-center  ${styles.menuLists}`}>
-        <li>
-          <Link href="/" className="flex items-center ">
-            <HamBurgerMenu/>
+        <li onClick={()=>setToggle(!toggle)}>
+          <Link href="/" className="flex items-center " >
+            
+            <HamBurgerMenu toggle={toggle} setToggle={setToggle}/>
             All
           </Link>
         </li>
