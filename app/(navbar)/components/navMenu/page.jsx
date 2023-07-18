@@ -16,11 +16,14 @@ const NavMenu = ({toggle,setToggle}) => {
   return (
     <nav className={`flex justify-between px-4 py-2 bg-gray-700 text-white ${styles.navLists}`}>
       <ul className={`flex gap-x-3 text-xs items-center  ${styles.menuLists}`}>
-        <li onClick={()=>setToggle(!toggle)}>
-          <Link href="/" className="flex items-center " >
+        <li >
+          <Link href="/"  >
+            <div onClick={()=>setToggle(!toggle)} className="flex flex-row items-center ">
+              <HamBurgerMenu toggle={toggle} setToggle={setToggle}/>
+            <span>All</span> 
+            </div>
             
-            <HamBurgerMenu toggle={toggle} setToggle={setToggle}/>
-            All
+            
           </Link>
         </li>
         <li>
