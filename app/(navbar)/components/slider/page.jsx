@@ -25,6 +25,18 @@ const Slider = () => {
     }
   }, [activeSlideIndex]);
 
+  useEffect(() => {
+    // Function to move to the next slide
+    const nextSlide = () => {
+      setActiveSlideIndex((prevIndex) => (prevIndex + 1) % SliderList.length);
+    };
+  
+    // Set up the timer to advance to the next slide
+    const timer = setInterval(nextSlide, 3000);
+  
+    // Clear the timer when the component unmounts or when interval changes
+    return () => clearInterval(timer);
+  }, [activeSlideIndex, SliderList.length]);
   return (
     <div className={sliderContainer}>
       {SliderList.map((slider, index) => {
