@@ -1,13 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
-import { FaShoppingCart, FaHeart, FaSearch } from "react-icons/fa";
-import { CSSTransition } from "react-transition-group";
 import HomeDealCategoryCard from "./(navbar)/components/(homeCategoryFolder)/homeDealCategoryCard/page";
 import HomeServiceCategoryCard from "./(navbar)/components/(homeCategoryFolder)/homeServiceCategoryCard/page";
 import Footer from "./(navbar)/components/footer/page";
-import ProductList from "./(navbar)/components/productList/page";
 import HomeSignInCard from "./(navbar)/components/(homeCategoryFolder)/homeSignInCard/page";
-import Image from "next/image";
 import HomePrimeDealList from "./(navbar)/components/(homeCategoryFolder)/HomePrimeDealList/page";
 import "./globals.css";
 import HomeEarlyPrimeDealSlider from "./(navbar)/components/(homeCategoryFolder)/homeEarlyPrimeDealSlider/page";
@@ -19,10 +15,7 @@ import NavMenu from "./(navbar)/components/navMenu/page";
 import Slider from "./(navbar)/components/slider/page";
 
 
-
-
 const Home = () => {
-  const [showIcons, setShowIcons] = useState(false);
   const [toggle, setToggle] = useState(false);
   
 
