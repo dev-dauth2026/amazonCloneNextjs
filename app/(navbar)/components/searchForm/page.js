@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
-
+import ProductList from "../productList/page";
 import Select from "react-select";
 
 const SearchForm = () => {
@@ -18,9 +18,7 @@ const SearchForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Perform search or other action here
-    console.log("Selected Option:", selectedOption);
-    console.log("Search Value:", searchValue);
+  
   };
   const customStyles = {
     control: (provided) => ({
@@ -43,41 +41,27 @@ const SearchForm = () => {
       maxHeight: "100vh",
     }),
   };
+  const categories = ProductList.map(product => product.category);
+
+  const uniqueCategories = Array.from(new Set(categories)).map((category) => ({
+    value: category,
+    label: category,
+  }));
+
   return (
     <form className="flex items-center w-full h-15 rounded hover:ring-yellow-200 hover:ring-[1px]" onSubmit={handleSubmit}>
       <div className="relative inline-flex w-full ">
+         
         <Select
-          className="text-gray-900 rounded-r-0 z-50"
-          options={[
-            { value: "all", label: "All Departments" },
-            { value: "alexa skill", label: "Alexa Skills" },
-            { value: "amazon devices", label: "Amazon Devices" },
-            { value: "amazon global store", label: "Amazon Global Store" },
-            { value: "amazon warehouse", label: "Amazon Warehouse" },
-            { value: "apps & games", label: "Apps & Games" },
-            { value: "Audible Audiobooks", label: "Audible Audiobooks" },
-            { value: "Automotives", label: "Automotives" },
-            { value: "Baby", label: "Baby" },
-            { value: "Beauty", label: "Beauty" },
-            { value: "CDs & Vinyl", label: "CDs & Vinyl" },
-            {
-              value: "Clothes, Shoes & Accessories",
-              label: "Clothes, Shoes & Accessories",
-            },
-            { value: "Women", label: "Women" },
-            { value: "Men", label: "Men" },
-            { value: "Boys", label: "Boys" },
-            { value: "Girls", label: "Girls" },
-            {
-              value: "Computers & Accessories",
-              label: "Computers & Accessories",
-            },
-          ]}
-          onChange={handleOptionChange}
-          placeholder="All"
-          isSearchable={false}
-          styles={customStyles}
-        />
+      className="text-gray-900 rounded-r-0 z-[100]"
+      onChange={handleOptionChange}
+      options={uniqueCategories}
+      placeholder="All"
+      isSearchable={false}
+      styles={customStyles}
+    />
+      
+
         <input
           className="flex-1 text-gray-700  border border-gray-300 py-2 px-3 focus:outline-none bg-white"
           type="text"

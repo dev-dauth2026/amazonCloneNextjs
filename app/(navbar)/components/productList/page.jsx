@@ -337,7 +337,7 @@ const ProductList = [
     totalPurchase: 1234,
     trending: false,
   },
-  ,
+  
   {
     id: "21",
     name: "Cube TV Speaker",
